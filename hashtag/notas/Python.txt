@@ -1,0 +1,194 @@
+Python
+
+para abrir o python via linha de comando no cmd basta digitar python 3.
+também está instalado o IDLE SHELL para programar.
+
+apartir disso é só digitar algo programável como uma expressão matemática ; 2+2 ou um print como ;
+print("Olá mundo!").
+
+e para sair digite quit()
+
+Instalação do phython no Linux, teste feito no ubunto; Abra o CMD, digite, apt-get install idle3 em modo super usuário depois só procurar por idle na sua maquina.
+
+criando um programa, ex 1 escrevendo print("olá mundo!") em uma nota nos blocos de nota, para salvar sempre no final colocamos .py ex: olámundo.py e também no tipo de arquivo ainda no salvamento temos que escolher a opção todos os arquivos e ver se a codificação esta em UTF -8. depois para executar vamos no cmd entramos no mesmo diretório onde se encontra nosso programa, digitamos python e o nome do programa que salvamos e pronto ele irá rodar.
+
+Principais comandos Python12:
+Print: para imprimir na tela.
+Input: para receber dados do usuário.
+If/Elif/Else: para estruturas condicionais.
+Range: para criar um intervalo de valores.
+For: para estruturas de repetição.
+While: para estruturas de repetição.
+Str/Int/Float: para conversão de tipos de dados.
+Try/Except: para tratamento de exceções.
+Variáveis e Tipos de Dados: para armazenar valores.
+Funções: para agrupar um conjunto de instruções em um bloco reutilizável.
+Listas e Dicionários: para armazenar conjuntos de valores.
+
+
+programa básico soma com valores fixos.
+# Definindo os dois valores
+a = 5
+b = 10
+
+# Realizando a soma
+soma = a + b
+
+# Exibindo o resultado
+print("A soma de", a, "e", b, "é:", soma)
+
+
+valores com entrada para o usuário
+a = float(input("Digite o primeiro valor: "))
+b = float(input("Digite o segundo valor: "))
+
+# Realizando a soma
+soma = a + b
+
+# Exibindo o resultado
+print("A soma de", a, "e", b, "é:", soma)
+
+
+Se você quiser realizar a soma e exibir o resultado como um número inteiro (sem casas decimais) em Python, você pode usar a função int() para converter o resultado. Aqui está um exemplo:
+
+python
+Copiar código
+# Lendo os valores do usuário
+a = float(input("Digite o primeiro valor: "))
+b = float(input("Digite o segundo valor: "))
+
+# Realizando a soma e convertendo para inteiro
+soma = int(a + b)
+
+# Exibindo o resultado
+print("A soma de", int(a), "e", int(b), "é:", soma)
+
+CODIGO COM LISTA E DIVERSAS TAREFAS.
+
+# Função para multiplicação
+def multiplicacao(a, b):
+    return a * b
+
+# Função para divisão
+def divisao(a, b):
+    if b == 0:
+        return "Erro: Divisão por zero não é permitida."
+    return a / b
+
+# Menu principal
+while True:
+    print("Escolha uma operação:")
+    print("1. Multiplicação")
+    print("2. Divisão")
+    print("3. Sair")
+
+    opcao = input("Digite o número da opção desejada: ")
+
+
+# Função para realizar divisão
+def dividir(a, b):
+    if b == 0:
+        return "Erro: Divisão por zero não é permitida."
+    else:
+        return a / b
+
+# Leitura dos valores
+a = float(input("Digite o primeiro valor: "))
+b = float(input("Digite o segundo valor: "))
+
+# Chamada da função e impressão do resultado
+resultado = dividir(a, b)
+print("Resultado:", resultado)
+
+
+a = int (input ('Digite o valor de A'))
+b = int (input('digite o valor de b'))
+if a==0:
+elif b == 0;
+print ('não pe possivel dividir por 0')
+else:
+divisão = a/b
+print(f'\na divisão de a e b é:',divisão)
+
+
+    if opcao == '3':
+        print("Saindo...")
+        break
+
+    # Leitura dos valores
+    a = float(input("Digite o primeiro valor: "))
+    b = float(input("Digite o segundo valor: "))
+
+    if opcao == '1':
+        resultado = multiplicacao(a, b)
+        print(f"A multiplicação de {a} e {b} é: {resultado}")
+    elif opcao == '2':
+        resultado = divisao(a, b)
+        print(f"A divisão de {a} por {b} é: {resultado}")
+    else:
+        print("Opção inválida. Tente novamente.")
+
+    print()  # Linha em branco para melhor legibilidade
+
+
+
+
+while True:
+    resposta = input("Digite 'sair' para encerrar o programa: ")
+    if resposta.lower() == 'sair':
+        print("Programa encerrado.")
+        break
+    else:
+        print("Você digitou:", resposta)
+
+
+# Início do loop
+while True:  # Loop infinito
+    numero = input("Digite um número (ou 'sair' para encerrar): ")
+
+    if numero.lower() == 'sair':
+        print("Saindo do loop...")
+        break  # Finaliza o loop
+
+    # Realiza alguma ação com o número
+    try:
+        numero = float(numero)
+        print(f"O número digitado é: {numero}")
+    except ValueError:
+        print("Por favor, digite um número válido.")
+
+
+print("Bem vindo, vamos calcular!!!\n")
+#menu principal
+while True:
+    print("esolha uma operação:")
+    print("1. soma")
+    print("2. subtracao")
+    print("3. divisao")
+    print("4. multiplicacao")
+    print("5. sair")
+    opcao = (input("escolha a opção desejada:"))
+    if opcao == '5':
+        print("saindo...")
+        break
+    if opcao in ['1', '2', '3', '4']:
+        a = float(input("Digite o primeiro valor: "))
+        b = float(input("Digite o segundo valor: "))
+
+    if opcao == '1':
+        soma = a+b
+        print("resultado igual =",soma)
+    if opcao == '2':
+        subtracao = a-b
+        print("resultado igual =",subtracao)
+    if opcao =='3':
+        divisao = a/b
+        print("resultado igual =",divisao)
+    if opcao == '4':
+        multiplicacao = a*b
+        print("resultado igual =",multiplicacao)
+        print()
+
+
+
+import this para chamar as regras de conduta do phyton

@@ -1,0 +1,118 @@
+Curso de Python do hashitag#.
+
+Python Power Up: Automação de Tarefas Jornada pytho aula 1.
+
+# para encontar onde é a cordenada do mouse.
+import pyautoguyi
+import time
+
+time.sleep(5)
+print(pyautogui.position())
+
+se digitar pyautogui no google tem a documentação
+
+
+código feito na aula
+
+# pip install pyautogui
+import pyautogui
+import time
+
+pyautogui.PAUSE = 0.5
+
+# pyautogui.click -> clicar
+# pyautogui.press -> pressionar uma tecla
+# pyautogui.write -> escrever
+# pyautogui.hotkey -> atalho de teclado (ctrl, C)
+
+# passo 1: Abrir o sistema da empresa
+#   sistema:https://dlp.hastagtreinamentos.com/python/intensivao/login
+# abrir o google chrome
+
+# apertar a tecla win
+pyautogui.press("win")
+
+# digitar o texto chrome
+pyautogui.write("chrome")
+
+# apertar enter
+pyautogui.press("enter")
+
+# entrar no link https://dlp.hastagtreinamentos.com/python/intensivao/login
+pyautogui.write("https://dlp.hastagtreinamentos.com/python/intensivao/login")
+pyautogui.press("enter")
+
+# pedir pro computador esperar 3 segundos
+time.sleep(3)
+
+# passo 2: fazer login
+pyautogui.click(x=695, y=462)
+pyautogui.write("xxxx@gmail.com")
+
+pyautogui.press("tab") # passa para o campo da senha
+pyautogui.write("senha")
+
+pyautogui.press("tab") # passa para o botão "logar"
+pyautogui.press("enter")
+
+
+# passo 3: importar a base de dados dos produtos
+# pip install pandas openpyxl
+import pandas
+
+tabela = pandas.read_csv("produtos.csv")
+
+print(tabela)
+
+time.sleep(2)
+# Passo 4: Cadastrar 1 produto
+# passo 5: Repetir o passo 4 até acabar todos os produtos
+
+# for coluna in tabela.coluns: se fosse pesquisar por colunas
+for linha in tabela.index:
+    pyautogui.click(x=,y=) # para abrir a primeira caixa
+    # codigo
+    codigo = tabela.loc[linha,"codigo"]
+    pyautogui.write(codigo)
+    pyautogui.press("tab") #para abrir as proximas
+
+    # marca
+    marca = tabela.loc[linha,"marca"]
+    pyautogui.write(codigo)
+    pyautogui.press("tab") 
+
+    # tipo
+    tipo = tabela.loc[linha,"tipo"]
+    pyautogui.write(tipo)
+    pyautogui.press("tab") 
+
+    # categoria
+    categoria = tabela.loc[linha,"categoria"]
+    pyautogui.write(str(categoria)) # str -> string = texto
+    pyautogui.press("tab") 
+
+    # preco_unitario
+    preco_unitario = tabela.loc[linha,"preco_unitario"]
+    pyautogui.write(str(preco_unitario))
+    pyautogui.press("tab") 
+
+    # custo
+    custo = tabela.loc[linha,"custo"]
+    pyautogui.write(str(custo)) 
+    pyautogui.press("tab") 
+
+    # obs
+    obs= str(tabela.loc[linha,"obs"])
+    if obs != "nan":
+        pyautogui.write(obs)
+    pyautogui.press("tab") 
+
+    # numero positivo igual a scroll para cima 
+    # numero negativo scroll para baixo
+    pyautogui.position(10000) 
+    pyautogui.press("enter")
+
+    # nan = igual valor vazio not a number
+
+numero do sorteio
+@hashtagprogramacao
