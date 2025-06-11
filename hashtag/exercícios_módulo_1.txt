@@ -22,7 +22,7 @@ Custo da Loja: 2.500,00
 
 Use o bloco abaixo para criar todas as variáveis que precisar.
 """
-
+###
 
 
 """1. Qual foi o faturamento de Pepsi da Loja?"""
