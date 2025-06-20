@@ -1,0 +1,8 @@
+Curso de Python do hashitag#. aula 3 
+Projeto python IA : Ia e provisões.
+
+dividir dados de treino e dados de teste
+y é a coluna que queremos prever
+x e os caras que vamos usar para fazer a previsão
+
+vai ficar x_treino, Y_treino e x_teste e Y_teste.
