@@ -1,5 +1,0 @@
-Curso de Python do hashitag#. aula 2
-python insights: Analisando dados com python.
-
-quanto mais simples e intuitivo for o seu gráfico melhor
-
