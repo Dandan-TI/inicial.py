@@ -1,0 +1,22 @@
+ ### BASH ###
+ Para puxar (puxar = pull) as atualizações do GitHub:
+
+git pull origin main
+origin: nome do repositório remoto (padrão é "origin").
+
+main: nome do branch principal (às vezes pode ser master dependendo do repositório).
+
+Para subir (enviar = push) arquivos novos ou alterados:
+Primeiro, veja os arquivos modificados:
+git status
+
+Adicione os arquivos modificados:
+git add .
+ou para adicionar arquivos específicos:
+git add nome_do_arquivo.extensao
+
+Faça um commit com uma mensagem:
+git commit -m "mensagem explicando o que foi alterado"
+
+Envie as mudanças para o GitHub:
+git push origin main
